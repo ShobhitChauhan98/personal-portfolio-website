@@ -1,0 +1,1270 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box !important;
+}
+
+html{
+    font-size:62.5%;
+    font-family: 'Dancing Script';
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+.comman-section{
+    padding:5rem 0rem;
+}
+
+/*---------------------------------------------------------------------*/
+/*=====Header section styling start=====*/
+header{
+    background-color:#081b29;
+    width:100%;
+    min-height:100vh;
+    position:relative;
+    user-select:none;
+}
+
+/*=====Navbar styling start=====*/
+header #navbar{
+    width:100%;
+    height:5rem;
+    padding:0rem 0rem;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:rgba(17, 46, 66,0.9);
+}
+
+header #navbar .logo{
+    float:left;
+}
+
+header #navbar .logo h1{
+    color:cyan;
+    font-size:3.5rem;
+    font-size:500;
+    text-transform:uppercase;
+    line-height:5rem;
+    margin-left:2rem;
+    cursor:pointer;
+}
+
+
+header #navbar .logo span{
+    color:white;
+}
+
+header #navbar ul{
+    float:right;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+header #navbar ul li{
+    display:inline-block;
+}
+
+header #navbar ul li a{
+    text-decoration-line:none;
+    display:block;
+    color:white;
+    font-size:2.3rem;
+    text-transform:capitalize;
+    line-height:5rem;
+    padding:0rem 1.8rem;
+    margin-right:2rem;
+    transition:all 0.5s;
+}
+
+header #navbar ul li a:hover{
+    color:cyan;
+    transform:translateY(-0.5rem);
+}
+
+/*-----------------*/
+header #navbar #checkbox{
+    float:left;
+    margin-top:2rem;
+    display:none;
+
+}
+
+header #navbar #checkBtn{
+    float:right;
+    color:cyan;
+    line-height:5rem;
+    font-size:2.9rem;
+    font-weight:600;
+    margin-right:2.5rem;
+    cursor:pointer;
+    display:none;
+}
+
+/* header #navbar #checkBtn:hover{
+    color:cyan;
+} */
+
+#navbar #checkbox:checked~ul{
+    transform:translateX(0%);
+}
+/*-----------------------------------*/
+/*=====Navbar styling end=====*/
+
+/*=====Profile styling Start=====*/
+#profile-section{
+    /* border:1px solid white; */
+    padding:5rem 0rem;
+    margin:5rem 0rem 0rem;
+}
+
+#profile-section .container{
+    /* border:1px solid lime; */
+    width:70%;
+    margin-top:4rem;
+}
+
+/* #profile-section .row{
+    border:1px solid yellow;
+} */
+
+#profile-section .col-md-4,.col-md-5,.col-md-6,.col-md-12{
+    /* border:1px solid white; */
+    margin:auto;
+}
+
+#profile-section .profile-content{
+    /* border:1px solid green; */
+    color:white;
+}
+
+#profile-section .profile-content .greet{
+    /* border:1px solid white; */
+    font-size:2.8rem;
+    text-transform:capitalize;
+    letter-spacing:0.1px;
+    margin:0;
+}
+
+#profile-section .profile-content .greet::first-letter{
+    font-size:3.6rem;
+}
+
+#profile-section .profile-content .greet span{
+    color:cyan;
+}
+
+#profile-section .profile-content .name{
+    /* border:1px solid white; */
+    color:aqua;
+    font-size:3.3rem;
+    font-weight:700;
+    letter-spacing:0.1px;
+    margin:0;
+    margin:0.3rem 0rem;
+}
+
+
+#profile-section .profile-content .info{
+    font-size:1.9rem;
+    font-weight:670;
+    margin:0;
+    margin-top:0.6rem;
+    margin-bottom:0.8rem;
+}
+
+#profile-section .profile-content p{
+    /* border:1px solid red; */
+    width:85%;
+    color:rgba(187,180,180);
+    font-size:1.6rem;
+    font-weight:600;
+    padding:0.5rem 0rem;
+    /* padding-right:4rem;
+    text-align:justify; */
+    /* margin:1.5rem 0rem; */
+}
+
+#profile-section .gap{
+    /* border:1px solid orange; */
+    padding:1rem 0rem;
+}
+/*-----------------------------------*/
+/*Download and Hire me button styling start*/
+/*comman-button styling*/
+#profile-section .button{
+    /* border:1px solid white; */
+    margin-top:2rem;
+    margin-bottom:3.6rem; 
+}
+
+#profile-section .button .comman-btn{
+    /* margin-top:1.5rem;
+    margin-bottom:3.3rem; */
+    margin-bottom:1.5rem;
+    margin-right:1.4rem;
+    border-radius:0.8rem;
+    background-color:cyan;
+    border-color:cyan;
+}
+
+#profile-section .button .comman-btn a{
+    text-decoration:none;
+    display:block;
+    color:black;
+    font-size:1.5rem;
+    font-weight:600;
+    text-transform:capitalize;
+    padding:0.4rem 1rem;
+    border-radius:0.6rem;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+}
+
+#profile-section .button #download-button a::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    border-radius:0.6rem;
+    transform:translateX(-100%);
+    transition:all 0.6s;
+    z-index:-1;
+}
+
+#profile-section .button #download-button a:hover{
+    color:white;
+}
+
+#profile-section .button #download-button a:hover:before{
+    transform:translateX(0%);
+}
+
+/*-----------------------------------*/
+/*Hire Button Styling*/
+#profile-section .button #hire-button{
+    background-color:rgba(0,0,0,0.2);
+}
+
+#profile-section .button #hire-button a{
+    color:white;
+    padding:0.4rem 2.8rem;
+}
+
+#profile-section .button #hire-button a::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:cyan;
+    transform:translateX(-100%);
+    transition:all 0.6s;
+    z-index:-1;
+}
+
+#profile-section .button #hire-button a:hover{
+    color:black;
+}
+
+#profile-section .button #hire-button a:hover:before{
+    transform:translateX(0%);
+}
+/*Download and Hire button styling end*/
+/*-----------------------------------*/
+/*Social icons styling start*/
+#profile-section .social-icons{
+    /* border:1px solid white; */
+    margin-top:1.5rem;
+    margin-bottom:1rem;
+}
+
+#profile-section .social-icons a{
+    text-decoration:none;
+    display:inline-block;
+    border:0.3rem solid cyan;
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    color:cyan;
+    font-size:1.9rem;
+    text-align:center;
+    padding:0.3rem;
+    margin-right:1.6rem;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+}
+
+#profile-section .social-icons a:hover{
+    color:#112e42;
+}
+
+#profile-section .social-icons a::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.6);
+    background-color:rgba(72, 227, 227);
+    border-radius:50%;
+    transform:translateX(-100%);
+    transition:all 0.7s;
+    z-index:-1;
+}
+
+#profile-section .social-icons a:hover:before{
+    transform:translateX(0%);
+}
+/*Social icons styling end*/
+/*-----------------------------------*/
+/*Image styling start*/
+/* #profile-section .profile-img{
+    width:100%;
+    height:100%;
+    display:flex;
+}
+
+#profile-section .profile-img img{
+    width:100%;
+    height:auto;
+    border-radius:50%;
+    object-fit:cover;
+    cursor:pointer;
+} */
+
+ #profile-section .profile-img{
+    /* border:1px solid red; */
+    width:100%;
+    height:90%;
+    display:flex;
+    justify-content:center;
+    /* align-items:center; */
+}
+
+#profile-section .profile-img img{
+    width:95%;
+    height:auto;
+    border-radius:50%;
+    object-fit:cover;
+    cursor:pointer;
+}
+/*=====Profile styling end=====*/
+/*-----------------------------------*/
+/*=====Header section styling end=====*/
+/*---------------------------------------------------------------------*/
+
+/*=====About section styling start=====*/
+#about-section{
+    /* border:1px solid black; */
+    background-color:#112e42;
+    padding:5rem 0rem;
+}
+
+/* #about-section .container{
+    border:1px solid white;
+}
+
+#about-section .row{
+    border:1px solid red;
+}
+
+#about-section .col-md-4,.col-md-6,.col-md-12,.col-md-5{
+    border:1px solid lime;
+} */
+
+#about-section h1{
+    /* border:1px solid white; */
+    text-align:center;
+    color:white;
+    font-size:4rem;
+    font-weight:700;
+    text-transform:capitalize;
+    letter-spacing:0.3px;
+    margin-bottom:4.5rem;
+}
+
+#about-section h1 span{
+    color:cyan;
+}
+
+/*about section image styling start*/
+/* #about-section .about-img{
+    border:1px solid white;
+    width:100%;
+    height:100%;
+} */
+
+#about-section .about-img img{
+    width:100%;
+    height:350px;    
+    padding:1rem;
+    object-fit:cover;
+    border-radius:2rem;
+    cursor:pointer;
+}
+/*about section image styling end*/
+/*----------------*/
+/*about section content styling start*/
+#about-section .about-content{
+    /* border:1px solid white; */
+    text-align:justify;
+    padding:1rem;
+    margin-left:1rem;
+}
+
+#about-section .about-content h3{
+    color:white;
+    font-size:2.5rem;
+    font-weight:700;
+    text-transform:capitalize;
+}
+
+#about-section .about-content p{
+    color:white;
+    font-size:1.98rem;
+    font-weight:400;
+    margin-top:1.5rem;
+}
+
+/*about section content styling end*/
+/*----------------*/
+/*about section button styling start*/
+#about-section .about-content button{
+    text-decoration:none;
+    display:inline-block;
+    background-color:cyan;
+    color:black;
+    font-size:1.5rem;
+    font-weight:600;
+    text-transform:capitalize;
+    padding:0.6rem 1.4rem;
+    margin-top:2.2rem;
+    border:none;
+    border-radius:0.8rem;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+#about-section .about-content button::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    border-bottom:0.5rem solid cyan;
+    border-radius:0.8rem;
+    transform:translateX(-100%);
+    transition:all 1s;
+    z-index:-1;
+}
+
+#about-section .about-content button:hover:before{
+    transform:translateX(0%);
+}
+
+#about-section .about-content button:hover{
+    color:white;
+}
+/*about section button styling end*/
+/*---------------*/
+/*=====About section styling end=====*/
+/*---------------------------------------------------------------------*/
+/*=====Service section styling start*/
+#service-section{
+    /* border:1px solid black; */
+    padding:5rem 0rem;
+    background-color:#081b29;
+}
+
+/* #service-section .col-md-4{
+    border: 1px solid rgba(255, 255, 255,0.8);
+    border-radius: 0.6rem;
+} */
+
+
+#service-section .service-head{
+    /* border:1px solid white; */
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+#service-section .service-head h1{
+    color:white;
+    font-size:3.7rem;
+    font-size:600;
+    text-transform:capitalize;
+    letter-spacing:0.1px;
+}
+
+#service-section .service-head p{
+    color:cyan;
+    font-size:1.9rem;
+    font-weight:500;
+}
+
+
+#service-section .cards{
+    border: 1px solid rgba(255, 255, 255,0.8);
+    padding: 2rem;
+    border-radius: 0.6rem;
+    background-color:#112e42;
+    user-select:none;
+    transition:all 0.8s;
+    cursor:pointer;
+}
+
+#service-section .cards:hover{
+    box-shadow:2px 2px 4px 1px cyan;
+    transform:perspective(800px) translateZ(10px);
+}
+
+#service-section .cards img{
+    width:18%;
+    cursor:pointer;
+    margin:0.5rem 0rem 0rem;
+}
+
+#service-section .cards h3{
+    color: white;
+    font-size:2rem;
+    font-weight:700;
+    text-transform: capitalize;
+    letter-spacing: 0.1px;
+    margin: 1.3rem 0rem;
+}
+
+#service-section .cards p{
+    color:white;
+    font-size:1.5rem;
+    word-spacing:0.1px;
+    margin: 1.6rem 0rem;
+}
+
+#service-section .cards button{
+    text-decoration-line:none;
+    display:inline-block;
+    background-color:cyan;
+    color:black;
+    font-size:1.3rem;
+    font-weight:500;
+    text-transform:capitalize;
+    padding:0.6rem 2rem;
+    margin:1.5rem 0rem 0.1rem;
+    border:1px solid cyan;
+    border-radius:0.8rem;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+}
+
+#service-section .cards button::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    border-radius:0.8rem;
+    transform:translateX(-100%);
+    z-index:-1;
+    transition:all 1s;
+}
+
+#service-section .cards button:hover:before{
+    transform:translateX(0%);
+}
+
+#service-section .cards button:hover{
+    color:white;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*=====Skill section styling start======*/
+#skill-section{
+    /* border:1px solid black; */
+    background-color:#112e42;
+    padding:6rem 0rem;
+}
+
+#skill-section .content-row{
+    background-color:#081b29;
+    padding:3rem;
+}
+
+
+#skill-section h1{
+    /* border:1px solid white; */
+    text-align:center;
+    color:white;
+    font-size:3.5rem;
+    font-weight:600;
+    text-transform:capitalize;
+    letter-spacing:0.2px;
+    margin-bottom:4rem;
+}
+
+#skill-section h1 span{
+    color:cyan;
+}
+
+
+#skill-section .skill-content{
+    /* border:1px solid white; */
+    padding:3rem 2rem;
+}
+
+#skill-section .skill-content p.message{
+    color:cyan;
+    font-size:2.2rem;
+    text-transform:capitalize;
+    letter-spacing:0.1px;
+}
+
+#skill-section .skill-content p.content{
+    text-align:justify;
+    font-size:1.7rem;
+    font-weight:400;
+    color:white;
+    /* letter-spacing:0.1px; */
+    word-spacing:0.1px;
+    /* word-break:break-all; */
+    margin:2.2rem 0rem 0rem;
+}
+
+#skill-section .skill-content .button{
+    /* border:1px solid white; */
+    margin:3.8rem 0rem 1rem;
+    /* margin: 1.6rem 0rem 1rem; */
+    text-align:center;
+
+}
+
+#skill-section .skill-content .button button{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    background-color:cyan;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    border:none;
+    border-radius:0.8rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem black;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#skill-section .skill-content .button button::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.6);
+    border-bottom:0.4rem solid cyan;
+    border-radius:0.8rem;
+    transform:translateX(-100%);
+    z-index:-1;
+    transition:all 1s;
+
+}
+
+#skill-section .skill-content .button button:hover:before{
+    transform:translateX(0%);
+}
+
+#skill-section .skill-content .button button:hover{
+    color:white; 
+}
+
+
+/*progress bar styling*/
+#skill-section .progress-bars{
+    /* border:1px solid white; */
+    width:60%;
+    margin:auto;
+    color:cyan;
+    font-size:1.8rem;
+    padding-left:5rem;
+    text-align:justify;
+    margin-bottom:1rem;
+}
+
+.html-bar{
+    display:inline-block;
+    border:1px solid cyan;
+    width:80%;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.html-per{
+    display:block;
+    width:85%;
+    padding:0.45rem;
+    /* border-radius:0px 4px 4px 0px; */
+    background-color:cyan;
+    animation-name:htmlAnimation;
+    animation-duration:1s;
+}
+
+@keyframes htmlAnimation {
+    0%{
+        width:0%;
+    }
+
+    100%{
+        width:85%;
+    }
+}
+
+
+.css-bar{
+    display:inline-block;
+    border:1px solid cyan;
+    width:80%;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.css-per{
+    display:block;
+    width:80%;
+    padding:0.45rem;
+    /* border-radius:0px 4px 4px 0px; */
+    background-color:cyan;
+    animation-name:cssAnimation;
+    animation-duration:1s;
+}
+
+@keyframes cssAnimation {
+    0%{
+        width:0%;
+    }
+
+    100%{
+        width:80%;
+    }
+}
+
+.javascript-bar{
+    display:inline-block;
+    border:1px solid cyan;
+    width:80%;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.javascript-per{
+    display:block;
+    width:75%;
+    padding:0.45rem;
+    /* border-radius:0px 4px 4px 0px; */
+    background-color:cyan;
+    animation-name:javascriptAnimation;
+    animation-duration:1s;
+}
+
+@keyframes javascriptAnimation {
+    0%{
+        width:0%;
+    }
+
+    100%{
+        width:75%;
+    }
+}
+
+.bootstrap-bar{
+    display:inline-block;
+    border:1px solid cyan;
+    width:80%;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.bootstrap-per{
+    display:block;
+    width:70%;
+    padding:0.45rem;
+    /* border-radius:0px 4px 4px 0px; */
+    background-color:cyan;
+    animation-name:bootstrapAnimation;
+    animation-duration:1s;
+}
+
+@keyframes bootstrapAnimation {
+    0%{
+        width:0%;
+    }
+
+    100%{
+        width:70%;
+    }
+}
+
+/*progress bar styling end*/
+
+/*=====Skill section styling end=====*/
+/*---------------------------------------------------------------------*/
+/*=====Contact section styling start=====*/
+/* --primary-bg-color: #081b29; dark
+--secondary-bg-color: #112e42; light */
+#contact-section{
+    /* border:1px solid red; */
+    padding:5rem 0rem;
+    background-color:#081b29;
+}
+
+/* #contact-section .container{
+    border:1px solid white;
+} */
+
+#contact-section .container .row{
+    /* border:1px solid yellow; */
+    background-color:#112e42;
+}
+
+/* #contact-section .container .row .col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,
+.col-md-12{
+    border:1px solid lime;
+} */
+
+#contact-section h1{
+    color:white;
+    font-size:3rem;
+    font-weight:600;
+    text-align:center;
+   text-transform: capitalize;
+   margin:0.5rem 0rem 2rem;
+}
+
+#contact-section h1 span{
+    color:cyan;
+}
+
+#contact-section .contact-form{
+    padding:1rem 0rem;
+    /* display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2rem; */
+}
+
+
+#contact-section input{
+    color:white;
+    background:rgba(0,0,0,0.5);
+    width:250px;
+    outline:none;
+    padding: 0.9rem 0rem;
+    text-indent:0.9rem;
+    font-size:1.1rem;
+    font-weight:600;
+    border-radius:0.8rem;
+    transition:all 0.5s;
+    border:0.2rem solid rgb(90, 181, 216);
+    margin:1rem 0.7rem;
+}
+
+#contact-section input::placeholder{
+    color:silver;
+    font-size:1.2rem;
+    font-weight:600;
+    letter-spacing:0.9px;
+    text-transform:capitalize;
+    text-align:center;
+}
+
+#contact-section input:hover{
+    border:none;
+    outline:none;
+    border-bottom:0.2rem solid cyan;
+}
+
+/*Form textarea field styling start*/
+#contact-section textarea{
+    color:white;
+    background:rgba(0,0,0,0.5);
+    outline:none;
+    padding:0.9rem 0rem;
+    text-indent:0.9rem;
+    font-size:1.2rem;
+    border-radius:0.8rem;
+    transition:all 0.5s;
+    border:0.2rem solid rgb(90, 181, 216);
+    resize:none;
+    margin:1rem 0.7rem;
+}
+
+#contact-section textarea::placeholder{
+    color:silver;
+    font-size:1.2rem;
+    font-weight:600;
+    text-transform:capitalize;
+}
+
+#contact-section textarea:hover{
+    border:none;
+    outline:none;
+    border-bottom:0.2rem solid cyan;
+}
+
+/*Form textarea field styling End*/
+
+/*Submit-Buttom styling Start*/
+#contact-section input[type="submit"]{
+    border:none;
+    width:110px;
+    background-color:cyan;
+    color:black;
+    font-size:1.3rem;
+    font-weight:500;
+    text-align:center;
+    border-radius:6px;
+    cursor:pointer;
+    transition:all 0.7s;
+    margin-bottom:1rem;
+    padding:0.6rem 0rem;
+    padding-right:0.8rem;
+}
+
+#contact-section input[type="submit"]:hover{
+    background-color:rgba(0,0,0,0.5);
+    border:2px solid cyan;
+    color:white;
+}
+/*=====Contact section styling end=====*/
+/*---------------------------------------------------------------------*/
+/*=====Bottom section styling start=====*/
+footer{
+    background-color:#112e42;
+    padding:0.6rem 2rem;
+}
+
+footer .bottom-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+footer .bottom-content p{
+    color:white;
+    font-size:1.5rem;
+    letter-spacing:0.6px;
+    cursor:pointer;
+    margin-top:1rem;
+}
+
+footer .bottom-content p span{
+    color:cyan;
+}
+
+footer .bottom-content a{
+    background-color:cyan;
+    display:block;
+    color:black;
+    font-size:1.2rem;
+    font-weight:bold;
+    padding:0.4rem 0.5rem;
+    border-radius:0.4rem;
+    animation-name:btnAnimation;
+    animation-duration:2s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+
+@keyframes btnAnimation{
+    to{
+        background-color:cyan;
+    }
+
+    from{
+        background-color:rgb(4, 184, 255);
+    }
+}
+
+/*=====bottom section styling end=====*/
+/*---------------------------------------------------------------------*/
+button{
+    cursor:pointer;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:cyan;
+} 
+
+/* ::-webkit-scrollbar-track{
+    background-color:cyan;
+} */
+
+/*---------------------------------------------------------------------*/
+
+
+/*=============================================================================*/
+/*=====Media Queries=====*/
+@media (max-width:1080px){
+    #contact-section .contact-form{
+        padding:1rem 2rem;
+    }
+    #contact-section input,textarea{
+        width:100%;
+        margin:1rem 0rem;
+    }
+
+    #contact-section textarea{
+        margin:1rem 0rem;
+    }
+
+    #contact-section textarea::placeholder{
+        text-align:center;
+    }
+}
+
+/*----------------------------------------*/
+@media (max-width:992px){
+    /*meadia queries for profile section*/
+        #profile-section .profile-content p{
+            width:100%;
+        }
+    
+    #profile-section .profile-img img{
+        justify-content:center;
+        align-items:center;
+    }
+    /*-----------------------------------*/
+
+    /*meadia queries for about section*/
+    #about-section .about-content p{
+        font-size:1.73rem;
+    }
+    /*-----------------------------------*/
+
+    /*meadia queries for skill section*/
+    #skill-section .skill-content p.message{
+        font-size:2rem;
+    }
+    
+    #skill-section .skill-content p.content{
+        text-align:justify;
+        font-size:1.6rem;
+        word-spacing:-0.2rem;
+    }
+    #skill-section .progress-bars{
+        width:100%;
+    }
+    /*-----------------------------------*/
+
+    /*meadia queries for contact section*/
+    #contact-section .contact-form{
+        padding:1rem 2rem;
+    }
+    #contact-section input,textarea{
+        width:100%;
+        margin:1rem 0rem;
+    }
+
+    #contact-section textarea{
+        margin:1rem 0rem;
+    }
+
+    #contact-section textarea::placeholder{
+        text-align:center;
+    }
+    
+}
+
+/*----------------------------------------*/
+@media (max-width:768px){
+    /*media queries for profile section*/
+    #profile-section .profile-content .greet{
+        /* border:1px solid white; */
+        font-size:2.6rem;
+        text-transform:capitalize;
+        letter-spacing:0.1px;
+        margin:0;
+    }
+    
+    #profile-section .profile-content .greet::first-letter{
+        font-size:3.3rem;
+    }
+    
+    #profile-section .profile-content .greet span{
+        color:cyan;
+    }
+    
+    #profile-section .profile-content .name{
+        font-size:3rem;
+    }
+    
+    
+    #profile-section .profile-content .info{
+        font-size:1.8rem;
+        font-weight:600;
+    }
+    
+    #profile-section .profile-content p{
+        font-size:1.6rem;
+        font-weight:500;
+    }
+     
+    /*-----------------------------------*/
+    /*media queries for about section*/
+    #about-section h1{
+        font-size:3.6rem;
+        margin-bottom:2.7rem;
+}
+    #about-section .about-content{
+        text-align:center;
+        margin-top:2.5rem;
+        margin-left:0rem;
+    }
+    
+    #about-section .about-content p{
+        font-size:1.7rem;
+    }
+
+    #about-section .about-content h3{
+        font-size:2.5rem;
+        color:cyan;
+    }
+    /*-----------------------------------*/
+
+    /*meadia queries for skill section*/
+    #skill-section .skill-content{
+        text-align:center;
+        word-break:break-all;
+        padding:3rem 0rem;
+    }
+
+    #skill-section .skill-content p.message{
+        font-size:2rem;
+    }
+    
+    #skill-section .skill-content p.content{
+        text-align:center;
+        font-size:1.6rem;
+        font-weight:400;
+        word-spacing:0.1px;
+        margin:2.2rem 0rem 0rem;
+    }
+
+    #skill-section .progress-bars{
+    
+        width:100%;
+    }
+    
+}
+
+/*----------------------------------------*/
+@media (max-width:480px){
+    /*media queries for profile section*/
+    #profile-section .container{
+        width:100%;
+    }
+    
+    #profile-section .profile-content .greet{
+        font-size:2.5rem;
+    }
+    
+    #profile-section .profile-content .greet::first-letter{
+        font-size:3.4rem;
+    }
+
+    #profile-section .profile-content .name{
+        font-size:2.7rem;
+        font-weight:700;
+    }
+    
+    
+    #profile-section .profile-content .info{
+        font-size:1.6rem;
+        font-weight:700;
+    }
+    
+    #profile-section .profile-content p{
+        font-size:1.5rem;
+        font-weight:600;
+        padding:0.5rem 0rem;
+    }
+    
+    /*-----------------------------------*/
+    /*media queries for footer section*/
+    footer .bottom-content{
+        flex-direction:column;
+        gap:2rem;
+    }
+
+    footer .bottom-content p{
+        font-size:1.3rem;
+        text-align:center;
+    }
+
+    #skill-section .progress-bars{
+        /* border:1px solid white; */
+        width:100%;
+        font-size:1.6rem;
+        padding-left:1rem;
+    }
+    
+}
+/*=============================================================================*/
+
+
+
+/*======media queries for responsive navbar=====*/
+@media (max-width:686px){
+    header #navbar #checkBtn{
+        display:block;
+    }
+
+    header #navbar ul{
+        background-color:rgba(0,0,0,0.6);
+        min-width:35%;
+        height:100vh;
+        position:fixed;
+        top:5rem;
+        left:0rem;
+        transform:translateX(-100%);
+        transition:all 0.5s;
+    }
+
+    header #navbar ul li{
+        display:block;
+        text-align:center;
+        margin:0.8rem 0rem;
+
+    }
+
+    header #navbar ul li:first-child{
+        margin-top:2rem;
+    }
+
+    header #navbar ul li a:hover{
+        transform:translateY(0rem);
+    }
+}

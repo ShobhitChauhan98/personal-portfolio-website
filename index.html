@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="images/icons.png">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <!--Header Section-->
+    <header id="header-section">
+        
+        <!--Navbar Section-->
+        <nav id="navbar">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox" id="checkBtn">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <div class="logo">
+                <h1>s<span>c</span></h1>
+            </div>
+
+            <ul>
+                <li><a href="#header-section">home</a></li>
+                <li><a href="#about-section">about</a></li>
+                <li><a href="#service-section">services</a></li>
+                <li><a href="#skill-section">skills</a></li>
+                <li><a href="#contact-section">contact</a></li>
+            </ul>
+        </nav>
+
+        <!--Profile Section-->
+        <section id="profile-section">
+            <div class="container">
+                <div class="row justify-content-center align-items-center flex-column-reverse flex-md-row text-center text-md-start">
+                    <div class="col-md-5">
+                        <div class="gap">
+                            <div class="profile-content">
+                            <h3 class="greet">hello <span>i'm</spa></h3>
+                            <h2 class="name">Shobhit Chouhan</h2>
+                            <h3 class="info">Frontend Web Developer</h3>
+                            <p>
+                                This is my official portfolio website to show all my details and work experience in
+                                web development.
+                            </p>
+                        </div>
+
+                        <div class="button">
+                            <button id="download-button" class="comman-btn">
+                                <a href="shobhit chauhan resume.pdf" download="shobhit chauhan resume.pdf" target="_blank">Download CV</a>
+                            </button>
+
+                            <button id="hire-button" class="comman-btn">
+                                <a href="mailto:shobhitchauhan1100@gmail.com">Hire Me</a>
+                            </button>
+                        </div>
+
+                        <!--Social icons-->
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/shobhitchauhan1100?mibextid=ZbWKwL" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/shobhit-chauhan-3229ba27a" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Profile image-->
+                    <div class="col-md-5">
+                        <div class="profile-img">
+                            <img src="images/profile image2.jpeg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!--About Section-->
+    <section id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>about <span>me</span></h1>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="about-img wow animate__animated animate__fadeInLeft">
+                        <img src="images/about img.jpg">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="about-content wow animate__animated animate__fadeInRight">
+                        <h3>frontend developer !</h3>
+                        <p>
+                            I'm a front end developer with five years of experience in web development. I've worked on a variety
+                            of projects for clients in the retail, travel, and healthcare industries. I'm passionate about
+                            creating great user experiences and have a strong understanding of usability and accessibility
+                            standards.
+                            <span style="display:none;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum porro laudantium magni. Doloremque
+                            quis,vero libero in enim amet nulla sint nesciunt facilis, harum totam beatae omnis, deleniti
+                            </span>
+                        </p>
+                        <button>read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Services Section-->
+    <section id="service-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="service-head">
+                        <h1>my <span>services</span></h1>
+                        <p>what i provide</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div id="card1" class="cards mb-4" data-aos="fade-right">
+                        <img src="images/web devlopment.png" />
+                        <h3>web development</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, accusantium quae impedit
+                            tempore quod repellendus sed delectus blanditiis? Accusamus, quis?
+                            <span style="display:none;" class="comman-span">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium similique aliquid
+                                reprehenderit non ut nulla?
+                            </span>
+                        </p>
+                        <button class="commna-readmoreBtn">read more</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div id="card2" class="cards mb-4" data-aos="slide-down">
+                        <img src="images/Web design.png" />
+                        <h3>web design</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, accusantium quae impedit
+                            tempore quod repellendus sed delectus blanditiis? Accusamus, quis?
+                            <span style="display:none;" class="comman-span">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium similique aliquid
+                                reprehenderit non ut nulla?
+                            </span>
+                        </p>
+                        <button class="commna-readmoreBtn">read more</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div id="card1" class="cards mb-4" data-aos="fade-left">
+                        <img src="images/UXUi.png" />
+                        <h3>UX/UI design</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, accusantium quae impedit
+                            tempore quod repellendus sed delectus blanditiis? Accusamus, quis?
+                            <span style="display:none;" class="comman-span">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium similique aliquid
+                                reprehenderit non ut nulla?
+                            </span>
+                        </p>
+                        <button class="commna-readmoreBtn">read more</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--Skills Section-->
+    <section id="skill-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>my <span>skills</span></h1>
+                </div>
+            </div>
+            
+            <div class="row content-row align-items-center text-center text-md-start">
+                <div class="col-md-6">
+                    <div class="skill-content wow animate__animated animate__backInLeft">
+                        <p class="message">every day is a new challenge</p>
+                        <p class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nam ipsum dignissimos. Maiores,
+                            eaque. Repellat beatae culpa necessitatibus delectus dolores eos obcaecati, recusandae reprehenderit
+                            nostrum accusamus. Placeat possimus saepe facilis.
+                            <span id="readmore2" style="display:none;">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Quasi voluptates rerum pariatur? Alias iusto recusandae porro sed quasi
+                                doloribus iure?
+                            </span>
+                        </p>
+                        <div class="button">
+                            <button class="skills-btn">read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 wow animate__animated animate__backInRight">
+                    <div class="progress-bars">
+                        <span>HTML</span><br>
+                        <span class="html-bar"><span class="html-per"></span></span>
+                        <span>85%</span>
+                    </div>
+    
+                    <div class="progress-bars">
+                        <span>CSS</span><br>
+                        <span class="css-bar"><span class="css-per"></span></span>
+                        <span>80%</span>
+                    </div>
+    
+                    <div class="progress-bars">
+                        <span>JAVASCRIPT</span><br>
+                        <span class="javascript-bar"><span class="javascript-per"></span></span>
+                        <span>75%</span>
+                    </div>
+    
+                    <div class="progress-bars">
+                        <span>BOOTSTRAP</span><br>
+                        <span class="bootstrap-bar"><span class="bootstrap-per"></span></span>
+                        <span>70%</span>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1>contact <span>me</span>
+                </div>
+
+                <div class="col-md-6">
+                    <form method="post" autocomplete="off" class="contact-form wow animate__animated animate__zoomIn" onsubmit="sendEmail(); reset(); return false;">
+                        <div class="row1">
+                            <input type="text" id="fullname" name="Fullname" placeholder="FullName" required/>
+                            <input type="email" id="email" name="Email" placeholder="Email" required/>
+                        </div>
+
+                        <div class="row2">
+                            <input type="tel" id="Mobile Number" name="Phone Number" placeholder="Mobile Number" min="10" max="10"
+                                required />
+                            <input type="text" id="Email Subject" name="Email Subject" placeholder="Email Subject" />
+                        </div>
+
+                        <div class="demo3">
+                            <textarea id="Message" rows="11" cols="89" name="User Description"
+                                placeholder="Your Message"></textarea>
+                            </div>
+                        <div class="btn">
+                            <input type="Submit" value="Submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <footer id="bottom-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bottom-content">
+                        <p>Copyright<span>&copy;</span>by<span>Shobhit Chauhan</span> | All Right Reserved</p>
+                        <a href="#header-section"><i id="icon" class="fa fa-arrow-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Javascript link-->
+    <script src="javascript.js"></script>
+
+    <!--for send email-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    
+    <!--for animation-->
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
